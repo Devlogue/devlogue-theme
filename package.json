@@ -1,0 +1,21 @@
+{
+    "name": "devlogue-theme",
+    "displayName": "Dev_Logue Theme",
+    "description": "Theme from dev_logue community",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.55.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Dev_logue Theme",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Dev_logue Theme-color-theme.json"
+            }
+        ]
+    }
+}
