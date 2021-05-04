@@ -1,21 +1,63 @@
 {
-    "name": "devlogue-theme",
-    "displayName": "Dev_Logue Theme",
-    "description": "Theme from dev_logue community",
-    "version": "0.0.1",
-    "engines": {
-        "vscode": "^1.55.0"
-    },
-    "categories": [
-        "Themes"
-    ],
-    "contributes": {
-        "themes": [
-            {
-                "label": "Dev_logue Theme",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Dev_logue Theme-color-theme.json"
-            }
-        ]
-    }
+	"name": "devlogue-theme",
+	"version": "0.0.1",
+	"displayName": "Dev_logue Theme",
+	"homepage": "",
+	"description": "Dev_logue community theme",
+	"publisher": "Devlogue",
+	"license": "MIT",
+	"scripts": {
+		"build": "node ./scripts/build.js",
+		"lint": "node ./scripts/lint.js",
+		"package": "vsce package -o ./bin/devlogue.vsix",
+		"vscode:prepublish": "npm run build",
+		"publish": "vsce publish",
+		"login": "vsce login Devlogue"
+	},
+	"maintainers": [
+		"Marcos Nunes <marcosrenatovnunes@hotmail.com>"
+	],
+	"contributors": [],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Devlogue/devlogue-theme.git"
+	},
+	"engines": {
+		"vscode": "^1.13.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"devlogue",
+		"dev_logue",
+		"dark",
+		"theme",
+		"color-theme"
+	],
+	"icon": "icon.png",
+	"galleryBanner": {
+		"color": "#161620",
+		"theme": "dark"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Devlogue",
+				"uiTheme": "vs-dark",
+				"path": "./theme/devlogue.json"
+			},
+			{
+				"label": "Devlogue Soft",
+				"uiTheme": "vs-dark",
+				"path": "./theme/devlogue-soft.json"
+			}
+		]
+	},
+	"devDependencies": {
+		"js-yaml": "^3.14.0",
+		"prettier": "^2.2.1",
+		"tinycolor2": "^1.4.2",
+		"vsce": "^1.85.0"
+	}
 }
