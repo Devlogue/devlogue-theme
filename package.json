@@ -9,8 +9,8 @@
 	"scripts": {
 		"build": "node ./scripts/build.js",
 		"lint": "node ./scripts/lint.js",
-		"package": "vsce package -o ./bin/devlogue.vsix",
-		"vscode:prepublish": "npm run build",
+		"package": "vsce package",
+		"prepublish": "npm run build",
 		"publish": "vsce publish",
 		"login": "vsce login Devlogue"
 	},

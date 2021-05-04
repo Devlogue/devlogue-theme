@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 # Dev_logue Theme -  [Visual Studio Code](http://code.visualstudio.com)
 
 > A dark theme for [Visual Studio Code](http://code.visualstudio.com).
@@ -14,8 +12,6 @@ Install using Command Palette
 - Write Dev_logue
 - Select it or press Enter to install
 
-
-
 ## Team
 
 [<img src="https://avatars.githubusercontent.com/u/4360587?v=4" width="100px" />](https://github.com/marcos-nunes-dev) |
@@ -26,4 +22,3 @@ Install using Command Palette
 ## License
 
 [MIT License](./LICENSE)
->>>>>>> Stashed changes
